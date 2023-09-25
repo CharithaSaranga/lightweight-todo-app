@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
+}
+
+body {
+    background: #cdf1fc;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 4rem;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Handlee', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7ac8f5;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #f0f4f8;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+button {
+    border-radius: 15px;
+    background: #7ac8f5;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-container label{
+    margin-bottom: 7px;
+}
+div label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+div select {
+    padding: 6px 12px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: #f0f4f8;
+}
+
+.todos-list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.todo {
+    position: relative;
+    background: #b0e5fd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fade-in 0.3s ease;
+    margin-right: 25px;
+    margin-left: 0px;
+}
+
+.completed {
+    background: #c1f4c1;
+    /* Green background for completed tasks */
+}
+
+.todo-details {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.priority {
+    margin-right: 10px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.high {
+    background: #ff5757;
+    color: #ffffff;
+
+}
+
+.medium {
+    background: #f0ad4e;
+    color: #ffffff;
+}
+
+.low {
+    background: #5bc0de;
+    color: #ffffff;
+}
+
+.due-date {
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    color: #6d6e6e;
+    margin-top: 16px;
+}
+
+.note {
+    font-size: 14px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    color: #6d6e6e;
+    margin-left: 10px;
+    width: 70%;
+    font-weight: 500;
+}
+
+.todo-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.todo-header {
+    margin-bottom: 15px;
+}
+
+.todo-header span {
+    margin-left: 10px;
+
+
+}
+
+.complete {
+    margin-right: 10px;
+    padding: 4px 10px;
+    background: #5bc0de;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+}
+
+.complete:hover {
+    background: #31708f;
+}
+
+.close {
+    padding: 4px 10px;
+    cursor: pointer;
+    background: #ff5757;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.close:hover {
+    background: #e00;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+.reset-button {
+    border-radius: 15px;
+    background: #ff5757;
+    padding: 6px 14px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+    margin-bottom: 12px;
+}
+
+.reset-button:hover {
+    background: #e00;
+}
+
+.todos-list {
+    margin-left: 0px !important;
+}
